@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Red+Hat+Display:ital,wght@0,500;0,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    font-size: 16px
+}
+main{
+    text-align: center;
+    max-width: 450px;
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.content{
+    padding: 7%;
+    text-align: center;
+}
+.content_title{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 1rem;
+}
+.content p.content_subtitle{
+    font-size: 20px;
+    color:  hsl(224, 23%, 55%);
+    margin-bottom: 1.2rem;
+}
+.plan_box{
+    text-align: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1rem;
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+.plan_box_left{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.plan_box_left div{
+    margin-left: 20px;
+}
+.plan_box_left div h5{
+    font-weight: 900;
+    font-size: 15px;
+    color: hsl(223, 47%, 23%);
+}
+.plan_box_left div p{
+    font-weight: 900;
+    font-size: 14px;
+    color:  hsl(224, 23%, 55%);
+}
+.plan_box a{
+    font-weight: 900;
+    color:  hsl(223, 47%, 23%);
+    transition: color .3s ease;
+}
+.plan_box a:hover{
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+}
+a.proceed_btn{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    padding: 20px 0;
+    border-radius: 12px;
+    margin: 30px 0;
+    transition: background-color .3s ease;
+}
+a.proceed_btn:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+a.cancel_btn{
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 900;
+    transition: color .3s ease;
+}
+a.cancel_btn:hover{
+    color: hsl(223, 47%, 23%);
+}
+@media only screen and (max-width: 425px){
+    body{
+        background-image: url(./images/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+    main{
+        max-width: 87%;
+    }
+    .content{
+        font-size: 23px;
+    }
+    div .plan_box{
+        padding: 12px;
+    }
+    .plan_box_left{
+        margin-left: 10px;
+    }
+    a.proceed_btn,
+    a .cancel_btn,
+    .plan_box a{
+        font-size:13px ;
+    }
+}
